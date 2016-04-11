@@ -1,0 +1,61 @@
+/* Header */
+header {
+	padding: 25px 0;
+	.logo {
+		float: left;
+	}
+	nav.nav-desktop {
+		float: right;
+		li {
+			float: left;
+			&.active {
+				a {					
+					color: $color2;					
+				}
+			}
+			&:last-child {
+				border: 1px solid $color2;
+				border-radius: 4px;
+			}
+			a {
+				display: block;
+				padding: 0 15px;
+				line-height: 30px;
+				&:hover {
+					color: $color2;							
+				}
+			}
+		}
+	}
+}
+
+#header {
+	.navbar-toggle {
+		border: 1px solid $color2;
+		margin: 0;
+		padding: 7px 6px;
+	}
+
+	.navbar-toggle .icon-bar {
+		background-color: $color2;
+	}
+
+	.navbar-nav {
+		margin: 0;
+	}
+	.navbar-collapse {
+		margin-top: 10px;
+		padding-top: 5px;
+		border-top: 1px solid $color2;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.navbar-nav>li>a {
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	.navbar-collapse .navbar-nav>li.active>a {
+		color: $color2;
+	}
+}
+

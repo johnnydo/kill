@@ -1,0 +1,122 @@
+/* common style */
+html{
+    overflow-x: hidden;
+}
+
+body {
+	position: relative;
+	font-family: $font-body;
+	font-size: 14px;
+	line-height: 1.4;
+	color: $color1;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+} 
+
+a {
+    @extend %transition;
+    color: $color1;
+    text-decoration: none !important;
+    outline: none !important;
+    &:hover, &:active {
+        color: $color2;
+        text-decoration: none;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 960px;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: relative;
+    @extend %clearfix;
+}
+
+/*--- Wrapper Responsive ---*/
+.wrapper {    
+    @include max(1119px) {
+        width: 960px;
+    }
+    @include max(1023px) {
+        width: 960px;
+    }
+    @include max(979px) {
+        width: 780px;
+    }
+    @include max(799px) {
+        width: 740px;
+    }
+    @include max(767px) {
+        width: 620px;
+    }
+    @include max(639px) {
+        width: 440px;
+    }
+    @include max(479px) {
+        width: 300px;
+    }   
+}
+
+/* Lay out */
+#header, #main, #footer {
+	margin: 0 auto;
+}
+
+.block {
+	margin-bottom: 30px;
+}
+
+	
+.clearfix {
+	&:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.image-wrapper {
+	img {
+		width: 100%;
+	}
+}
+
+/* Button */
+.fr-btn {
+	display: inline-block;
+	border-radius: 5px;
+	font-size: 18px;
+	line-height: 40px;	
+	background-color: $color2;
+	color: #fff;
+}
+
+.btn-1 {		
+	padding: 0 35px;
+	&:hover {
+		color: #fff;
+	}
+}
+
+.btn-2 {
+	border: 1px solid #fff;
+	padding: 0 60px;
+	&:hover {
+		color: #fff;
+	}
+}
