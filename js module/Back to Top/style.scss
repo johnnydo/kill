@@ -1,0 +1,16 @@
+/* style.scss */
+
+@import "../../sass/base";
+
+.wrapper {
+	height: 1500px;
+}
+
+#back-to-top {
+	width: 60px;
+	height: 60px;
+	background-color: teal;
+	position: fixed;
+	right: 100px;
+	bottom: 50px;
+}

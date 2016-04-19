@@ -1,0 +1,22 @@
+/* style.scss */
+/* base */
+.wrapper {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  height: 1500px;
+}
+
+#back-to-top {
+  width: 60px;
+  height: 60px;
+  background-color: teal;
+  position: fixed;
+  right: 100px;
+  bottom: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

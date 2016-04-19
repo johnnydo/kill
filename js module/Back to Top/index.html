@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Back to Top</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<p>Back to Top</p>
+	</div>
+	<!-- ./ wrapper -->
+
+	<div id="back-to-top"></div>
+
+	<script src="../../js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript">
+		// Back to top
+		var toTop = jQuery("#back-to-top");
+    // hide #back-top first
+    toTop.hide();
+
+    // fade in #back-top
+    jQuery(function() {
+      jQuery(window).scroll(function() {
+          if (jQuery(this).scrollTop() > 100) {
+              toTop.fadeIn();
+          } else {
+              toTop.fadeOut();
+          }
+      });
+
+      // scroll body to 0px on click
+      toTop.on("click", function() {
+          jQuery("body,html").animate({
+              scrollTop: 0
+          }, 800);
+          return false;
+      });
+    });
+	</script>
+    
+</body>
+</html>

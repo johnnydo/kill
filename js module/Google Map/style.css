@@ -1,0 +1,14 @@
+/* style.scss */
+/* base */
+.wrapper {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.x-map {
+  height: 500px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
