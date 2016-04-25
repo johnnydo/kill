@@ -11,3 +11,8 @@ Each file in our working directory can be in one of two states: tracked or untra
 $ git status // checking the status of our files, determine which files are in which state
 $ git add README // tracking the README file
 $ git commit -m "message content" // commit our changes
+// if you're on branch master, your branch is ahead of 'origin/master' by 1 commit. Publish to our local commits:
+$ git push
+
+// to remove a file from Git, you have to remove it from your traked files (remove it from tracking area) and then commit
+$ rm projects.md
