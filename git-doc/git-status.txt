@@ -1,0 +1,13 @@
+Git status
+
+Each file in our working directory can be in one of two states: tracked or untracked.
+- Tracked files can be unmodified, modified or staged.
+- Untracked files are everything else.
+
+- When you first clone a repository, all of your file will be tracked and unmodified because Git just checked them out and you haven't edited anything.
+- As you edit files, Git sees them as modified because you've changed them since your last commit.
+- You stage these modified files and then commit all your staged changes, and the cycle repeats.
+
+$ git status // checking the status of our files, determine which files are in which state
+$ git add README // tracking the README file
+$ git commit -m "message content" // commit our changes
