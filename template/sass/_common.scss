@@ -4,22 +4,24 @@ html{
 }
 
 body {
-	position: relative;
-	font-family: $font-body;
-	font-size: 14px;
-	line-height: 1.4;
-	color: $color1;
+    position: relative;
+    font-family: $font-body;
+    font-size: 14px;
+    line-height: 1.4;
+    color: $color1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 ul, ol {
-	margin: 0;
-	padding: 0;
-	li {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-} 
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
 
 a {
     @extend %transition;
@@ -36,16 +38,16 @@ a {
 }
 
 .wrapper {
-	margin: 0 auto;
-	width: 960px;
-	padding-left: 10px;
-	padding-right: 10px;
-	position: relative;
+    margin: 0 auto;
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
     @extend %clearfix;
 }
 
 /*--- Wrapper Responsive ---*/
-.wrapper {    
+.wrapper {
     @include max(1119px) {
         width: 960px;
     }
@@ -66,21 +68,21 @@ a {
     }
     @include max(479px) {
         width: 300px;
-    }   
+    }
 }
 
 /* Lay out */
 #header, #main, #footer {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 .block {
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
-	
+
 .clearfix {
-	&:before,
+    &:before,
     &:after {
         content: "";
         display: table;
@@ -91,32 +93,32 @@ a {
 }
 
 .image-wrapper {
-	img {
-		width: 100%;
-	}
+    img {
+        width: 100%;
+    }
 }
 
 /* Button */
 .fr-btn {
-	display: inline-block;
-	border-radius: 5px;
-	font-size: 18px;
-	line-height: 40px;	
-	background-color: $color2;
-	color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 40px;
+    background-color: $color2;
+    color: #fff;
 }
 
-.btn-1 {		
-	padding: 0 35px;
-	&:hover {
-		color: #fff;
-	}
+.btn-1 {
+    padding: 0 35px;
+    &:hover {
+        color: #fff;
+    }
 }
 
 .btn-2 {
-	border: 1px solid #fff;
-	padding: 0 60px;
-	&:hover {
-		color: #fff;
-	}
+    border: 1px solid #fff;
+    padding: 0 60px;
+    &:hover {
+        color: #fff;
+    }
 }
